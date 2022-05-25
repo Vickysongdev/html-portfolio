@@ -1,0 +1,29 @@
+@import url(font-awesome.min.css);
+
+
+	#wrapper {
+		background-color: #212931;
+		background-image: url("./images/comp\ man.jpg"), linear-gradient(0deg, rgb(125, 124, 124), rgb(195, 193, 193)), url("./images/comp\ man.jpg");
+		background-size: auto,								auto,														100% auto;
+		background-position: center,								center,														top center;
+		background-repeat: repeat,								no-repeat,													no-repeat;
+		background-attachment: fixed,								fixed,														fixed;
+	}
+
+		#wrapper.fade-in:before {
+			display: none;
+		}
+
+/* Intro */
+
+	body.is-preload #intro {
+		opacity: 1;
+	}
+
+		body.is-preload #intro:not(.hidden) + #header + #nav {
+			-moz-transform: none;
+			-webkit-transform: none;
+			-ms-transform: none;
+			transform: none;
+			opacity: 1;
+		}
